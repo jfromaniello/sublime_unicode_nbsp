@@ -121,8 +121,9 @@ class HighlightUnicodeListener(DeferedViewListener):
         regions = []
         for x in view.find_all(u'[' + ''.join(self.chars.keys()) + u']+'):
             regions.append(x)
-        for x in view.find_all(u'[ \t]+$'):
-            regions.append(x)
+        
+        #for x in view.find_all(u'[ \t]+$'):
+        #    regions.append(x)
 
         #for x in view.find_all(u'^$'):
         #    regions.append(x)
